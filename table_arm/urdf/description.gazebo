@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<robot>
+  <gazebo reference="table_arm">
+    <material>Blue</material>
+    <!--  Friction coefficients  -->
+    <mu1>0.2</mu1>
+    <mu2>0.2</mu2>
+    <!-- If true, the link can collide with other links in the model. -->
+    <selfCollide>false</selfCollide>
+  </gazebo>
+</robot>
