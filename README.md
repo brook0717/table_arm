@@ -1,14 +1,18 @@
 # table_arm
 
-從入門到放棄
+__~~從入門到放棄~~__
 
-環境
+**環境**
 
 ubuntu20.04
 ros-noetic
 gazebo-11.0.0
 
-use $ catkin build	
+**build src** 
+
+$ catkin build	
+
+**roslaunch use**
 
 $ roslaunch table_arm gazebo.launch 
 
