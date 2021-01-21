@@ -3,12 +3,12 @@
   <!--The planning and execution components of MoveIt! configured to 
       publish the current configuration of the robot (simulated or real) 
       and the current state of the world as seen by the planner-->
-  <include file="$(find table_arm_moveit_config)/launch/move_group.launch">
+  <include file="$(find Little_arm_moveit)/launch/move_group.launch">
     <arg name="publish_monitored_planning_scene" value="true" />
   </include>
 
   <!--The visualization component of MoveIt!-->
-  <include file="$(find table_arm_moveit_config)/launch/moveit_rviz.launch"/>
+  <include file="$(find Little_arm_moveit)/launch/moveit_rviz.launch"/>
     <arg name="config" value="true"/>
     <arg name="debug" value="false"/>
 
@@ -17,3 +17,4 @@
     <param name="/use_gui" value="false"/> 
     <rosparam param="/source_list">[/table_arm/joint_states]</rosparam>
   </node>
+</launch>
