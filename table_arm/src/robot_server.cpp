@@ -1,8 +1,8 @@
 #include "ros/ros.h"
-#include "dual_arm_control/robot.h"
+#include "table_arm/robot.h"
 
-bool add(dual_arm_control::robot::Request  &req,
-         dual_arm_control::robot::Response &res)
+bool add(table_arm::robot::Request  &req,
+         table_arm::robot::Response &res)
 {
   //res.sum = req.a + req.b;
   ROS_INFO("request: joint_1=%f,
