@@ -39,7 +39,7 @@
     args="-urdf -model robot -param robot_description -x $(arg x) -y $(arg y) -z $(arg z) -R $(arg roll) -P $(arg pitch) -Y $(arg yaw)" />
 
   <!-- load the controllers -->
-  <!-- <node
+  <node
     name="controller_spawner"
     pkg="controller_manager"
     type="spawner"
@@ -52,7 +52,7 @@
           third_joint_velocity_controller
           fourth_joint_velocity_controller
           fifth_joint_velocity_controller
-          sixth_joint_velocity_controller"/> -->
+          sixth_joint_velocity_controller"/>
 
   <!-- convert joint states to TF transforms for rviz, etc -->
   <node
