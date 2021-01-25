@@ -1,5 +1,8 @@
- #controller_manager_ns: ''
-  controller_list:
+joint_state_controller:
+  type: joint_state_controller/JointStateController
+  publish_rate: 50
+controller_manager_ns: ''
+controller_list:
     - name: table_arm/group_1_controller
       action_ns: follow_joint_trajectory
       type: FollowJointTrajectory
