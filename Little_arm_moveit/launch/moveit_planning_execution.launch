@@ -5,6 +5,7 @@
       and the current state of the world as seen by the planner-->
   <include file="$(find Little_arm_moveit)/launch/move_group.launch">
     <arg name="publish_monitored_planning_scene" value="true" />
+    <arg name="pipeline" value="ompl"/>
   </include>
 
   <!--The visualization component of MoveIt!-->
