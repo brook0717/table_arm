@@ -27,7 +27,7 @@
 
     <!-- load the controllers -->
     <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false" ns="/table_arm"
-    output="screen" args="group1_controller
+    output="screen" args="group_1_controller
                           "/>
 
     <!-- convert joint states to TF transforms for rviz, etc -->
