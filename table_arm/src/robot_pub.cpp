@@ -1,13 +1,13 @@
 #include "ros/ros.h"
 #include "std_msgs/String.h"
-#include "dual_arm_control/robot_msg.h"
+#include "table_arm/robot_msg.h"
 #include <sstream>
 
 int main(int argc, char **argv)
 {
 	ros::init(argc, argv, "talker");
 	ros::NodeHandle n;
-	ros::Publisher robot_pub = n.advertise<dual_arm_control::robot_msg>("chatter", 1000);
+	ros::Publisher robot_pub = n.advertise<table_arm::robot_msg>("chatter", 1000);
 
 	ros::Rate loop_rate(10);	
 	while (ros::ok())
@@ -16,7 +16,7 @@ int main(int argc, char **argv)
      * This is a message object. You stuff it with data, and then publish it.
      */
 		//std_msgs::String msg;
-		dual_arm_control::robot_msg msg;
+		table_arm::robot_msg msg;
     	//std::stringstream ss;
     	//ss << "hello world " << count;
     	msg.A = 10.21;
