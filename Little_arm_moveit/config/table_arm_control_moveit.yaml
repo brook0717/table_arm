@@ -2,7 +2,7 @@ table_arm:
   joint_state_controller:
     type: joint_state_controller/JointStateController
     publish_rate: 50
-  group1_controller:
+  group_1_controller:
     type: position_controllers/JointTrajectoryController
     joints:
       - joint_1
