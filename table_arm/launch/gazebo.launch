@@ -5,6 +5,7 @@
   <arg name="gui" default="true"/>
   <arg name="headless" default="false"/>
   <arg name="debug" default="false"/>
+  <arg name="verbose" default="true" />
 
   <!-- Robot pose (Optional) -->
   <arg name="x" default="0"/>
@@ -15,7 +16,7 @@
   <arg name="yaw" default="0"/>
 
   <!-- Load joint controller configurations from YAML file to parameter server -->
-  <!-- <rosparam file="$(find table_arm)/config/table_arm.yaml" command="load"/> -->
+  <rosparam file="$(find table_arm)/config/table_arm.yaml" command="load"/>
   
   <!-- create empty_world -->
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
@@ -24,6 +25,7 @@
     <arg name="gui" value="$(arg gui)"/>
     <arg name="headless" value="$(arg headless)"/>
     <arg name="debug" value="$(arg debug)"/>
+    <arg name="verbose" value="$(arg verbose)"/>
   </include>
 
   <!-- Load the URDF into the ROS Parameter Server -->
