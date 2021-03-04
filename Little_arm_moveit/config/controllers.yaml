@@ -4,7 +4,7 @@ joint_state_controller:
 controller_manager_ns: ''
 controller_list:
     - name: table_arm/group_1_controller
-      action_ns: follow_joint_trajectory
+      action_ns: follow_joint_trajectory  
       type: FollowJointTrajectory
       default: true
       joints:
