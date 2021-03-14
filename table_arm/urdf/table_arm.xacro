@@ -5,8 +5,9 @@
 <robot
   name="table_arm" xmlns:xacro="http://www.ros.org/wiki/xacro">
   
-  <xacro:include filename="$(find table_arm)/urdf/controller.gazebo" />
+  <!-- <xacro:include filename="$(find table_arm)/urdf/controller.gazebo" /> -->
   <xacro:include filename="$(find table_arm)/urdf/description.gazebo" />
+  <xacro:include filename="$(find table_arm)/urdf/table_arm.transmission.xacro" />
 
   <link name="world"/>
   <joint name="joint0 " type="fixed">
